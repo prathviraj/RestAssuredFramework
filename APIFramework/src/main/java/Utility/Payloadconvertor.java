@@ -9,7 +9,7 @@ public class Payloadconvertor {
 	public static String genericpayloadstring(String filename) throws IOException
 	{
 		//String filepath = "C:\\Users\\PrathvirajMeenkeri\\Rest-Assured\\APIFramework\\resources\\" + filename;
-		String filepath =System.getProperty("user.dir")+"\\resource\\"+ filename;
+		String filepath =System.getProperty("user.dir")+"\\resources\\"+ filename;
 		//System.out.println(filepath);
 		return new String(Files.readAllBytes(Paths.get(filepath)));
 	}
